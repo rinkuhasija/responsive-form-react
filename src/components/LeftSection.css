@@ -1,0 +1,33 @@
+.left {
+    margin-left: 5.3%;
+    margin-top: 34vh;
+    max-width: 500px;
+  }
+  
+  .left h1 {
+    margin-left: 1.7vw;
+    margin-top: 6vh;
+    width: 400px;
+    height: 71px;
+  
+    font-weight: 900;
+    font-size: 43px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+  
+  }
+  
+  .left p {
+    margin-top: 3vh;
+    margin-left: 1.7vw;
+    width: 438px;
+    height: 20px;
+  
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+  

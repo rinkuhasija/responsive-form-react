@@ -1,0 +1,155 @@
+
+.alert {
+    margin-top: 22vh;
+    margin-left: 3.6vw;
+    width: 500px;
+    height: 44px;
+  
+    background: #F00000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+    border-radius: 5px;
+  }
+  
+  .form {
+    margin-left: 3.6vw;
+    /* margin-top: 24vh; */
+    width: 500px;
+    height: 470px;
+  
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+  }
+  
+  
+  
+  .alert p {
+    margin-left: 6.2vw;
+    width: 320px;
+    height: 10px;
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 99.19%;
+    /* or 10px */
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+  }
+  
+  .input {
+    width: 400px;
+    height: 33px;
+    background: #FFFFFF;
+    border: 1px solid #dbd7d7;
+    border-radius: 2px;
+    text-indent: 20px;
+    padding: 23px 0px;
+  }
+  
+  .inside-form {
+  
+    margin-left: 3.3rem;
+  }
+  
+  .first {
+    margin-top: 3rem;
+  }
+  
+  .last {
+    margin-top: -8px;
+    padding-bottom: 24px;
+    background: #37CC8A;
+
+    box-shadow: 0px 1px 0px rgba(216, 208, 208, 0.46);
+    border-radius: 2px;
+    text-indent: 0px;
+    /* padding: 0px 0px; */
+    height: 37px;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 99.19%;
+  
+  /* or 10px */
+  
+  letter-spacing: 0.28em;
+  
+  color: #FFFFFF;
+  
+  }
+
+  .form-btn {
+    margin-top: -7px;
+    padding-bottom: 24px;
+    background: #b5b5b5;
+    box-shadow: 0px 1px 0px rgba(216, 208, 208, 0.46);
+    border-radius: 2px;
+    text-indent: 0px;
+    /* padding: 0px 0px; */
+    height: 37px;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 99.19%;
+  
+  /* or 10px */
+  
+  letter-spacing: 0.28em;
+  color: #FFFFFF;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    margin-top: -3px;
+    flex-wrap: wrap;
+  }
+  
+  .skills p {
+    padding: 2px;
+    padding-left: 10px ;
+    padding-right: 6px;
+    margin-left: 13px;
+    margin-bottom: 21px;
+    /* width: 58px; */
+  height: 29px;
+  background: #DCDCDC;
+  border-radius: 9px;
+  }
+  
+  #first_ele {
+    margin: 0;
+  }
+  
+  .last_div {
+    margin-top: 14px;
+  }
+  
+  .last_div p {
+    margin-left: 50px;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.2px;
+  line-height: 99.19%;
+  /* or 7px */
+  
+  letter-spacing: 0.065em;
+  
+  color: #C2C2C2;
+  }
+  
+  .last_div span {
+    color: #FF0000 ;
+  }
+
+  .select {
+    padding-right: 45px;
+    text-indent: 15px;
+    height: 19px;
+  }
