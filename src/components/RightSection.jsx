@@ -6,55 +6,58 @@ const options = [
     { value: 'HTML', label: 'HTML' },
     { value: 'CSS', label: 'CSS' },
     { value: 'JS', label: 'JS' },
-    { value:"NODE",label:"NODE"},
-    { value: "REACT", label: "REACT"}
-  ]
+    { value: "NODE", label: "NODE" },
+    { value: "REACT", label: "REACT" }
+]
 
 
 
 
 function RightSection() {
 
-    const [formValues, setFromValues] = useState({"name":"","email":"","password":""})
+    const [formValues, setFromValues] = useState({ "name": "", "email": "", "password": "" })
     const [select, setSelect] = useState([])
     const [selectPlaceHolder, setSelectPlaceHolder] = useState("Choose Skills")
     const [active, setActive] = useState(false)
-    const [header,setHeader]= useState("Try it free 7 days then ₹180/mo. thereafter")
+    const [header, setHeader] = useState("Try it free 7 days then ₹180/mo. thereafter")
 
     function handleChange(e) {
-        setFromValues({...formValues,[e.target.name]:e.target.value})       
+        setFromValues({ ...formValues, [e.target.name]: e.target.value })
     }
 
     function handleSelect(e) {
-        setSelect((prev)=>[...prev,{...e[e.length-1]}])
+        setSelect([...e])
+        console.log(e)  // imp
+        console.log(select) //imp
     }
 
-    const claimTrial= (e)=>{
+    const claimTrial = (e) => {
+        // console.log(e);
         e.preventDefault();
         setHeader("You have successfully subscribed to our plan ✓")
-        setFromValues({"name":"","email":"","password":""})
+        setFromValues({ "name": "", "email": "", "password": "" })
         setSelect([])
         setActive(false)
-        setSelectPlaceHolder((prev)=>prev)
+        setSelectPlaceHolder((prev) => prev)
         setTimeout(() => {
             setHeader("Try it free 7 days then ₹180/mo. thereafter");
         }, 5000);
     }
 
-    const isFromSubmit =()=>{
+    const isFromSubmit = () => {
         for (const value in formValues) {
-            if(formValues[value].length==0){
+            if (formValues[value].length == 0) {
                 return false
             }
         }
         return true
     }
 
-    useEffect(()=>{
-        if(select.length>0 && isFromSubmit()){
+    useEffect(() => {
+        if (select.length > 0 && isFromSubmit()) {
             setActive(true)
         }
-    },[select,formValues])
+    }, [select, formValues])
 
     return (
         <div className="right col-md-6">
@@ -79,7 +82,7 @@ function RightSection() {
 
                         <Select className="select" options={options} placeholder={selectPlaceHolder} onChange={handleSelect} isMulti isClearable={true} hideSelectedOptions={true} id="skills" name="skills" /><br /><br />
 
-                        {active?<button onClick={claimTrial} className="input last">CLAIM YOUR FREE TRAIL</button>: <button onClick={claimTrial} className="input form-btn">CLAIM YOUR FREE TRIAL</button>}
+                        {active ? <button onClick={claimTrial} className="input last">CLAIM YOUR FREE TRAIL</button> : <button onClick={claimTrial} className="input form-btn">CLAIM YOUR FREE TRIAL</button>}
 
                         <div className="last_div">
                             <p> By clicking the button you are agreeing to our  <span> <strong>   Terms and Services  </strong></span>  </p>
